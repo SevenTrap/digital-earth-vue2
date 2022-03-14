@@ -20,6 +20,7 @@ import { getBSRxyz } from "@/utils/bezier.js";
 export default {
   data() {
     return {
+      data1:1,
       cesiumViewer: null,
     };
   },
