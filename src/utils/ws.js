@@ -1,5 +1,6 @@
 import store from "../store/index";
 const url = "ws://localhost:3000/ws";
+let wsTimer = null;
 
 const ws = new WebSocket(url);
 
@@ -14,6 +15,7 @@ ws.onmessage = (msg) => {
 
 ws.onclose = (event) => {
   store.commit("updateWsState", false);
+
   console.log(event);
 };
 
