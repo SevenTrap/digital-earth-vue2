@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div class="cesium">
     <div id="cesiumContainer"
          class="cesiumContainer"></div>
 
@@ -424,39 +424,9 @@ export default {
 };
 </script>
 
-<style lang="scss">
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html,
-body,
-#app,
-.cesiumContainer {
+<style lang="scss" scoped>
+.cesium {
   width: 100%;
   height: 100%;
-}
-
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  position: relative;
-
-  .func-btns {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-
-    .btn {
-      outline: none;
-      width: 32px;
-      height: 32px;
-      border-radius: 14%;
-      border: 0;
-    }
-  }
 }
 </style>
